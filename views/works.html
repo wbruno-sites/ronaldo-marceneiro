@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="content main">
+  <h2>Apartamento Planejado</h2>
+
+
+  {% for item in items %}
+  <img src="{{ item.image }}" alt="{{ item.name }}" />
+  {% endfor %}
+</div>
+
+
+{% endblock %}
