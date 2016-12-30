@@ -3,7 +3,7 @@
 
 let MainController = {
   index: function(request, response, next) {
-    response.render('index', {});
+    response.render('index', { title: 'Ronaldo Marceneiro - Móveis planejados sob medida' });
   }
 };
 
