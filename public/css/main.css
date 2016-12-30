@@ -62,15 +62,13 @@ a:hover { text-decoration: underline; }
   display: block;
 }
 .work-items img {
-  width: 330px;
-  height: 330px;
+  width: 100%;
+  height: autor;
 }
 .work-items li {
   margin-bottom: 20px;
   position: relative;
-}
-.work-items li:not(:nth-child(3n)) {
-  margin-right: 35px;
+  width: 30%;
 }
 .work-item-description {
   position: absolute;
@@ -89,4 +87,20 @@ a:hover { text-decoration: underline; }
 
 #footer a {
   color: #fff;
+}
+
+
+@media only screen and (max-width: 1060px) {
+  .content { padding: 0 15px; }
+}
+
+@media only screen and (min-width: 760px) {
+  .work-items li:not(:nth-child(3n)) { margin-right: 5%; }
+}
+@media only screen and (max-width: 760px) {
+  .work-items li { width: 47.5%; }
+  .work-items li:not(:nth-child(2n)) { margin-right: 5%; }
+}
+@media only screen and (max-width: 440px) {
+  .work-items li { width: 100%; }
 }
