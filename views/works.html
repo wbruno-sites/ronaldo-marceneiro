@@ -2,12 +2,15 @@
 
 {% block content %}
 <div class="content main">
-  <h2>Apartamento Planejado</h2>
+  <h2>{{ title }}</h2>
 
-
+  <ul class="work-items overflow">
   {% for item in items %}
-  <img src="{{ item.image }}" alt="{{ item.name }}" />
+    <li class="fleft">
+      <img src="{{ path }}/thumbs/{{ item.image }}" alt="{{ item.name }}" />
+    </li>
   {% endfor %}
+  </ul>
 </div>
 
 
