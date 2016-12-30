@@ -12,6 +12,10 @@ let express     = require('express'),
 let AppController = require('./controller/AppController');
 
 
+app.locals = {
+  canonical: 'http://www.ronaldomarceneiro.com.br'
+};
+
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
