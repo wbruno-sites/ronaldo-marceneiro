@@ -15,7 +15,7 @@
   </ul>
 </div>
 
-<div class="modal-content modal-1">
+<div class="modal-content modal-1 modal-close">
   <img src="${ image }" alt="${ title }" />
 </div><!-- .modal-content -->
 
@@ -25,14 +25,11 @@
   'use strict';
 
   /*global document:false */
-  var $ = function(selector) {
-    return document.querySelectorAll(selector);
-  };
 
-  var $button = $('.modal-open');
   modal.init({
-    btOpen: $button,
-    content: '.modal-1'
+    content: '.modal-1',
+    btOpen: document.querySelectorAll('.modal-open'),
+    overlay: document.querySelector('#overlay')
   });
 
 }());

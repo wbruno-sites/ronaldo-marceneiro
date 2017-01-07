@@ -10,14 +10,20 @@ var modal = (function (window, document) {
     config : function (config) {
       module.$element = document.querySelector(config.content);
       module.$body = document.body;
-      module.$btClose = module.$element.querySelectorAll('.close-modal');
+      module.$btClose = module.$element.querySelectorAll('.modal-close');
       module.$btOpen = config.btOpen;
+      module.$overlay = config.overlay;
     },
     open: function(event) {
       if (event) {
         event.stopPropagation();
         event.preventDefault();
       }
+
+      if (module.$overlay) {
+        module.$overlay.classList.add('is-open');
+      }
+
       var $element = module.$element.classList;
       $element.add('opened');
       $element.remove('closed');
@@ -29,6 +35,11 @@ var modal = (function (window, document) {
       module.$element.innerHTML = eval('`' + module.tpl + '`');
     },
     close: function() {
+
+      if (module.$overlay) {
+        module.$overlay.classList.remove('is-open');
+      }
+
       var $element = module.$element.classList;
       $element.remove('opened');
       $element.add('closed');

@@ -18,7 +18,7 @@
 .modal-content {
   font-size: 14px;
   background-color: white;
-  z-index: 2;
+  z-index: 10;
   position: fixed;
   top: 40px;
   left: 50%;
@@ -40,7 +40,7 @@
   padding: 20px 0px 0px 15px;
   border-bottom: 1px solid #cecece;
 }
-.modal-content .modal-header .close-modal {
+.modal-content .modal-header .modal-close {
   position: absolute;
   padding: 10px;
   right: 0;
@@ -50,7 +50,7 @@
   transition: all 500ms;
   user-select: none;
 }
-.modal-content .modal-header .close-modal:hover {
+.modal-content .modal-header .modal-close:hover {
   transform: rotate(180deg);
 }
 .modal-content .modal-body {
@@ -98,4 +98,17 @@
 }
 .modal-body::-webkit-scrollbar-thumb {
   background-color: #6600d6;
+}
+
+#overlay {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0; left: 0;
+  display: none;
+  z-index: 5;
+}
+#overlay.is-open {
+  display: block;
 }

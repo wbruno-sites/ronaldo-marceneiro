@@ -1,3 +1,8 @@
+html, body {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   font: 16px Tahoma, Arial, sans-serif;
   color: #666;
