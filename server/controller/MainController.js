@@ -24,6 +24,8 @@ let MainController = {
         { image: 'mesa-jantar-4.jpg', name: 'Mesa de Jantar com baú' },
         { image: 'rack-tv-2.jpg', name: 'Rack de tv' },
         { image: 'rack-tv.jpg', name: 'Rack de tv com painel' },
+        { image: 'escritorio.jpg', name: 'Escritório' },
+        { image: 'escritorio-2.jpg', name: 'Escritório' },
         { image: 'sapateira-2.jpg', name: 'Sapateira' },
         { image: 'sapateira-3.jpg', name: 'Sapateira' }
       ]
