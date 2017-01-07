@@ -17,6 +17,7 @@ let MainController = {
         { image: 'copa-americana.jpg', name: 'Copa Americana' },
         { image: 'cozinha-3.jpg', name: 'Cozinha sob medida' },
         { image: 'cozinha-4.jpg', name: 'Cozinha em madeira' },
+        { image: 'cozinha-5.jpg', name: 'Armário suspenso' },
         { image: 'cozinha.jpg', name: 'Cozinha' },
         { image: 'mesa-jantar-2.jpg', name: 'Mesa de Jantar' },
         { image: 'mesa-jantar-3.jpg', name: 'Mesa de Jantar planejada' },
