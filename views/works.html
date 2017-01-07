@@ -7,11 +7,35 @@
   <ul class="work-items overflow">
   {% for item in items %}
     <li class="fleft">
-      <img src="{{ path }}/thumbs/{{ item.image }}" alt="{{ item.name }}" />
+      <a href="{{ path }}/{{ item.image }}" title="{{ item.name }}" class="modal-open">
+        <img src="{{ path }}/thumbs/{{ item.image }}" alt="{{ item.name }}" />
+      </a>
     </li>
   {% endfor %}
   </ul>
 </div>
 
+<div class="modal-content modal-1">
+  <img src="${ image }" alt="${ title }" />
+</div><!-- .modal-content -->
+
+<script src="/javascript/modal.js"></script>
+<script>
+(function() {
+  'use strict';
+
+  /*global document:false */
+  var $ = function(selector) {
+    return document.querySelectorAll(selector);
+  };
+
+  var $button = $('.modal-open');
+  modal.init({
+    btOpen: $button,
+    content: '.modal-1'
+  });
+
+}());
+</script>
 
 {% endblock %}
