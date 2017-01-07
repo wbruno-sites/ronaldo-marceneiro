@@ -7,7 +7,7 @@ let MainController = {
   },
   apartment: function(request, response, next) {
     let data = {
-      title: 'Apartamento Planejado',
+      title: 'Apartamento Planejado - Ronaldo Marceneiro',
       path: '/images/trabalhos/apartamento',
 
       items: [
@@ -31,7 +31,7 @@ let MainController = {
   },
   kitchen: function(request, response, next) {
     let data = {
-      title: 'Armário suspenso da cozinha',
+      title: 'Armário suspenso da cozinha - Ronaldo Marceneiro',
       path: '/images/trabalhos/cozinha',
 
       items: [
@@ -45,7 +45,7 @@ let MainController = {
   },
   underMeasure: function(request, response, next) {
     let data = {
-      title: 'Móveis sob medida',
+      title: 'Móveis sob medida - Ronaldo Marceneiro',
       path: '/images/trabalhos/diversos',
 
       items: [
@@ -62,7 +62,7 @@ let MainController = {
   },
   bedroom: function(request, response, next) {
     let data = {
-      title: 'Móveis planejados para quarto',
+      title: 'Móveis planejados para quarto - Ronaldo Marceneiro',
       path: '/images/trabalhos/quarto',
 
       items: [
@@ -76,7 +76,7 @@ let MainController = {
   },
   room: function(request, response, next) {
     let data = {
-      title: 'Móveis para sacada e sala',
+      title: 'Móveis para sacada e sala - Ronaldo Marceneiro',
       path: '/images/trabalhos/sacada-e-sala',
 
       items: [
