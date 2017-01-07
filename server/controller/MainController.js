@@ -15,21 +15,16 @@ let MainController = {
         { image: 'armario-quarto-casal.jpg', name: 'Armário quarto de casal' },
         { image: 'banheiro.jpg', name: 'Armário planejado da pia do banheiro' },
         { image: 'copa-americana.jpg', name: 'Copa Americana' },
-        { image: 'cozinha-2.jpg', name: 'Cozinha Planejada' },
         { image: 'cozinha-3.jpg', name: 'Cozinha sob medida' },
         { image: 'cozinha-4.jpg', name: 'Cozinha em madeira' },
         { image: 'cozinha.jpg', name: 'Cozinha' },
-        { image: 'escritorio-2.jpg', name: 'Escritório' },
-        { image: 'escritorio.jpg', name: 'Estante de livros' },
         { image: 'mesa-jantar-2.jpg', name: 'Mesa de Jantar' },
         { image: 'mesa-jantar-3.jpg', name: 'Mesa de Jantar planejada' },
         { image: 'mesa-jantar-4.jpg', name: 'Mesa de Jantar com baú' },
-        { image: 'mesa-jantar.jpg', name: 'Mesa de Jantar' },
         { image: 'rack-tv-2.jpg', name: 'Rack de tv' },
         { image: 'rack-tv.jpg', name: 'Rack de tv com painel' },
         { image: 'sapateira-2.jpg', name: 'Sapateira' },
-        { image: 'sapateira-3.jpg', name: 'Sapateira' },
-        { image: 'sapateira.jpg', name: 'Sapateira' }
+        { image: 'sapateira-3.jpg', name: 'Sapateira' }
       ]
     };
     response.render('works', data);
